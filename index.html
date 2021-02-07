@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../survey_form/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Your Favorite Sport Survey</h1>
+
+    <p id="description">Thank you for taking your time to fill out this survey<p>
+    
+    <div id="body">
+    <form id="survey-form">
+  
+    <label id="name-label" for="name">
+        <p>Name:</p>
+    </label>
+  
+    <input id="name" type="text" placeholder="Enter Your Name" required>
+  
+    <label id="email-label" for="email">
+        <p>Email:</p>
+    </label>
+  
+    <input id="email" type="email" placeholder="Enter Your Email" required>
+  
+    <label id="number-label" for="number">
+        <p>Age:</p>
+    </label>
+  
+    <input id="number" type="number" placeholder="Enter Your Age" min="12" max="50" required>
+  
+    <p>Which sport would you choose?</p>
+    <select id="dropdown">
+        <option value="default">NONE</option>
+        <option value="Soccer">Soccer</option>
+        <option value="Footbal">Football</option>
+        <option value="Tennis">Tennis </option>
+    </select>
+  
+    <p>Why do yo like this sport?</p>
+    <br>
+    <input type="radio" name="sport" value="1">It is popular in my country</input>
+
+    <br>
+    <input type="radio" name="sport" value="2">It is easiest sport to play</input>
+
+    <br>
+    <input type="radio" name="sport" value="3">It is highest paying sport</input>
+
+
+    <p>Why do yo like this sport?</p>
+    <br>
+    <input type="checkbox" name="sport" value="1">It is popular in my country</input>
+
+    <br>
+    <input type="checkbox" name="sport" value="2">It is easiest sport to play</input>
+
+    <br>
+    <input type="checkbox" name="sport" value="3">It is highest paying sport</input>
+    <br>
+    <textarea name="comment" id="comment" cols="40" rows="4">Add Your Comment</textarea>
+    <input id="submit" type="submit" value="Submit">
+    </form>
+    </div>
+    </body>
+</html>
